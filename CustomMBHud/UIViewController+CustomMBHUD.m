@@ -36,7 +36,7 @@ static const void *HttpRequestHUDKey = &HttpRequestHUDKey;
     [self.view addSubview:HUD];
     [HUD show:YES];
     [self setHUD:HUD];
-
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [MBProgressHUD hideHUDForView:self.view animated:YES];
     });
@@ -47,7 +47,7 @@ static const void *HttpRequestHUDKey = &HttpRequestHUDKey;
     MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithView:loading];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.customView = loading;
-    HUD.opacity=0.7;
+    HUD.opacity=0;
     HUD.margin = 0;
     HUD.cornerRadius = 5;
     [self.view addSubview:HUD];
@@ -55,6 +55,9 @@ static const void *HttpRequestHUDKey = &HttpRequestHUDKey;
     [self setHUD:HUD];
 }
 -(void)closeLoading{
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+    });
+    
 }
 @end

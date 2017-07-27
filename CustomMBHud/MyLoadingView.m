@@ -37,21 +37,21 @@
     UIImageView* imageView=[[UIImageView alloc]initWithFrame:CGRectInset(customRect, imageInsets.left, imageInsets.top)];
     
     _imageArray=@[
-                      [UIImage imageNamed:@"正在加载1"],
-                      [UIImage imageNamed:@"正在加载2"],
-                      [UIImage imageNamed:@"正在加载3"],
-                      [UIImage imageNamed:@"正在加载4"],
-                      [UIImage imageNamed:@"正在加载5"],
-                      [UIImage imageNamed:@"正在加载6"],
-                      [UIImage imageNamed:@"正在加载7"],
-                      [UIImage imageNamed:@"正在加载8"],
-                      [UIImage imageNamed:@"正在加载9"],
-                      [UIImage imageNamed:@"正在加载10"]
-
-                      ];
+                  [UIImage imageNamed:@"正在加载1"],
+                  [UIImage imageNamed:@"正在加载2"],
+                  [UIImage imageNamed:@"正在加载3"],
+                  [UIImage imageNamed:@"正在加载4"],
+                  [UIImage imageNamed:@"正在加载5"],
+                  [UIImage imageNamed:@"正在加载6"],
+                  [UIImage imageNamed:@"正在加载7"],
+                  [UIImage imageNamed:@"正在加载8"],
+                  [UIImage imageNamed:@"正在加载9"],
+                  [UIImage imageNamed:@"正在加载10"]
+                  
+                  ];
     
     imageView.animationImages = _imageArray;
-    imageView.animationDuration = 1.25;
+    imageView.animationDuration = 0.5;
     imageView.animationRepeatCount = 0;
     
     [self addSubview:imageView];
@@ -60,11 +60,11 @@
     
     imageView.center = self.center;
     
-//    self.labelText = @"正在加载中...";
-//    self.fontSize = 11;
+    //    self.labelText = @"正在加载中...";
+    //    self.fontSize = 11;
     self.backgroundColor = [UIColor clearColor];
     
-    self.hudColor = [UIColor colorWithWhite:1 alpha:0.9];
+    self.hudColor = [UIColor colorWithWhite:1 alpha:0.7];
 }
 
 
