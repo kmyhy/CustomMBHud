@@ -13,6 +13,13 @@
 		1269F3F31F28C36C00BAD24C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1269F3F11F28C36C00BAD24C /* Main.storyboard */; };
 		1269F3F51F28C36C00BAD24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1269F3F41F28C36C00BAD24C /* Assets.xcassets */; };
 		1269F3F81F28C36C00BAD24C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1269F3F61F28C36C00BAD24C /* LaunchScreen.storyboard */; };
+		1269F4011F28C37900BAD24C /* UIViewController+CustomMBHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1269F4001F28C37900BAD24C /* UIViewController+CustomMBHUD.m */; };
+		1269F4081F28C3C800BAD24C /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 1269F4041F28C3C800BAD24C /* MBProgressHUD+Add.m */; };
+		1269F4091F28C3C800BAD24C /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1269F4051F28C3C800BAD24C /* MBProgressHUD.bundle */; };
+		1269F40A1F28C3C800BAD24C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1269F4071F28C3C800BAD24C /* MBProgressHUD.m */; };
+		1269F40D1F28C40A00BAD24C /* CircleMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1269F40C1F28C40A00BAD24C /* CircleMarkView.m */; };
+		1269F4111F28C62400BAD24C /* MyLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1269F4101F28C62400BAD24C /* MyLoadingView.m */; };
+		1269F4131F28C69F00BAD24C /* LoadingEffect.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1269F4121F28C69F00BAD24C /* LoadingEffect.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,18 @@
 		1269F3F41F28C36C00BAD24C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1269F3F71F28C36C00BAD24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1269F3F91F28C36C00BAD24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1269F3FF1F28C37900BAD24C /* UIViewController+CustomMBHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CustomMBHUD.h"; sourceTree = "<group>"; };
+		1269F4001F28C37900BAD24C /* UIViewController+CustomMBHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CustomMBHUD.m"; sourceTree = "<group>"; };
+		1269F4031F28C3C800BAD24C /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		1269F4041F28C3C800BAD24C /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		1269F4051F28C3C800BAD24C /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		1269F4061F28C3C800BAD24C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1269F4071F28C3C800BAD24C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1269F40B1F28C40A00BAD24C /* CircleMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleMarkView.h; sourceTree = "<group>"; };
+		1269F40C1F28C40A00BAD24C /* CircleMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleMarkView.m; sourceTree = "<group>"; };
+		1269F40F1F28C62400BAD24C /* MyLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoadingView.h; sourceTree = "<group>"; };
+		1269F4101F28C62400BAD24C /* MyLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLoadingView.m; sourceTree = "<group>"; };
+		1269F4121F28C69F00BAD24C /* LoadingEffect.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoadingEffect.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,8 @@
 		1269F3E71F28C36C00BAD24C /* CustomMBHud */ = {
 			isa = PBXGroup;
 			children = (
+				1269F4021F28C3C800BAD24C /* MBProgressHUD */,
+				1269F40E1F28C41700BAD24C /* Custom */,
 				1269F3EB1F28C36C00BAD24C /* AppDelegate.h */,
 				1269F3EC1F28C36C00BAD24C /* AppDelegate.m */,
 				1269F3EE1F28C36C00BAD24C /* ViewController.h */,
@@ -77,6 +98,32 @@
 				1269F3E91F28C36C00BAD24C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1269F4021F28C3C800BAD24C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1269F4031F28C3C800BAD24C /* MBProgressHUD+Add.h */,
+				1269F4041F28C3C800BAD24C /* MBProgressHUD+Add.m */,
+				1269F4051F28C3C800BAD24C /* MBProgressHUD.bundle */,
+				1269F4061F28C3C800BAD24C /* MBProgressHUD.h */,
+				1269F4071F28C3C800BAD24C /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		1269F40E1F28C41700BAD24C /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1269F4121F28C69F00BAD24C /* LoadingEffect.xcassets */,
+				1269F3FF1F28C37900BAD24C /* UIViewController+CustomMBHUD.h */,
+				1269F4001F28C37900BAD24C /* UIViewController+CustomMBHUD.m */,
+				1269F40B1F28C40A00BAD24C /* CircleMarkView.h */,
+				1269F40C1F28C40A00BAD24C /* CircleMarkView.m */,
+				1269F40F1F28C62400BAD24C /* MyLoadingView.h */,
+				1269F4101F28C62400BAD24C /* MyLoadingView.m */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1269F3F81F28C36C00BAD24C /* LaunchScreen.storyboard in Resources */,
+				1269F4131F28C69F00BAD24C /* LoadingEffect.xcassets in Resources */,
+				1269F4091F28C3C800BAD24C /* MBProgressHUD.bundle in Resources */,
 				1269F3F51F28C36C00BAD24C /* Assets.xcassets in Resources */,
 				1269F3F31F28C36C00BAD24C /* Main.storyboard in Resources */,
 			);
@@ -151,7 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1269F4011F28C37900BAD24C /* UIViewController+CustomMBHUD.m in Sources */,
+				1269F4111F28C62400BAD24C /* MyLoadingView.m in Sources */,
+				1269F40A1F28C3C800BAD24C /* MBProgressHUD.m in Sources */,
 				1269F3F01F28C36C00BAD24C /* ViewController.m in Sources */,
+				1269F4081F28C3C800BAD24C /* MBProgressHUD+Add.m in Sources */,
+				1269F40D1F28C40A00BAD24C /* CircleMarkView.m in Sources */,
 				1269F3ED1F28C36C00BAD24C /* AppDelegate.m in Sources */,
 				1269F3EA1F28C36C00BAD24C /* main.m in Sources */,
 			);
